@@ -5,7 +5,7 @@ const styles = {
   header: {
     color: 'white',
     textShadow: '0px 0px 150px black',
-    fontFamily: 'Helvetica',
+    fontFamily: 'Arial',
     fontSize: '150px',
     fontWeight: 'bolder'
   },
@@ -22,7 +22,7 @@ function HeroImage(){
     <div>
       <LazyHero 
         color='black' 
-        opacity='0.75' 
+        opacity='0.6' 
         imageSrc="https://unsplash.it/2000/1000"
         minHeight='70vh'
         isCentered='true'
