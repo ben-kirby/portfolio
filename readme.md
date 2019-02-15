@@ -36,7 +36,14 @@ This is a professional portfolio primarly made with React. At this point in time
 
 ## Features
 
+- Routing to all areas via navbar
+- 
+
+
 ## Known Issues
+
+- No actual content at this time
+- Many pages have partial/no styling
 
 ## Whats Next
 
