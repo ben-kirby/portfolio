@@ -1,6 +1,6 @@
 import React from 'react'
 import {NavItem} from 'react-materialize'
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom'
 
 
 const styles = {
