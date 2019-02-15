@@ -1,9 +1,18 @@
 import React from 'react'
+import {Navbar, NavItem} from 'react-materialize'
+
+
+const styles = {
+  links: {
+    marginRight: '10px',
+  }
+}
 
 function NavText(){
   return (
     <div>
-      <h1>Nav Text working</h1>
+      <NavItem style={styles.links}>Work</NavItem>
+      <NavItem style={styles.links}>About</NavItem>
     </div>
   )
 }

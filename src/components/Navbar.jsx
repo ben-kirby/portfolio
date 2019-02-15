@@ -1,20 +1,28 @@
 import React from 'react'
 import {Navbar, NavItem} from 'react-materialize'
 
-import NavLogo from './navbarComponents/NavLogo'
 import NavText from './navbarComponents/NavText'
+import icon from '../assets/images/icon.png'
+
+const styles = {
+  image: {
+    height: '44px',
+    width: '44px',
+    margin: '10px 0px 0px 10px'
+  },
+  navbar: {
+    backgroundColor: 'purple'
+  }
+}
 
 function Nav(props) {
   return (
     <div>
-      <Navbar brand='Logo' left>
-        <NavItem>Work</NavItem>
-        <NavItem>About</NavItem>
+      <Navbar style={styles.navbar} brand={<img style={styles.image} src={icon}/>} right>
+        <NavText/>
       </Navbar>
     </div>
   )
 }
-
-
 
 export default Nav
