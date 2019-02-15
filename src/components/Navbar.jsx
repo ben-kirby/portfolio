@@ -2,15 +2,16 @@ import React from 'react'
 import {Navbar} from 'react-materialize'
 
 import NavText from './navbarComponents/NavText'
-import icon from '../assets/images/test-jpg.jpg'
+import icon from '../assets/images/test-icon.png'
 
 const styles = {
   image: {
     height: '44px',
     width: '44px',
-    margin: '10px 0px 0px 10px'
+    margin: '10px 0px 0px 10px',
+    border: '0px solid black',
+    borderRadius: '5rem'
   },
-
   navbar: {
     backgroundColor: 'purple'
   }
