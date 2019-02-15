@@ -1,5 +1,5 @@
-import React from 'react';
-import LazyHero from 'react-lazy-hero';
+import React from 'react'
+import LazyHero from 'react-lazy-hero'
 
 const styles = {
   header: {
@@ -20,14 +20,7 @@ const styles = {
 function HeroImage(){
   return (
     <div>
-      <LazyHero 
-        color='black' 
-        opacity='0.6' 
-        imageSrc="https://unsplash.it/2000/1000"
-        minHeight='70vh'
-        isCentered='true'
-        parallaxOffset='200' 
-      >
+      <LazyHero color='black' opacity='0.6' imageSrc="https://unsplash.it/2000/1000" minHeight='70vh' isCentered='true' parallaxOffset='200'>
         <h1 style={styles.header}>I'm Ben</h1>
         <h3 style={styles.subheader}><em>a web developer</em></h3>
       </LazyHero>

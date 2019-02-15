@@ -1,12 +1,12 @@
 import React from 'react'
-import Hero from './mainComponents/Hero'
-import MainContent from './mainComponents/herocomponents/MainContent'
+import HeroImage from './mainComponents/HeroImage'
+import MainContent from './mainComponents/MainContent'
 
 
 function Main() {
   return(
     <div>
-      <Hero/>
+      <HeroImage/>
       <MainContent/>
     </div>
 
