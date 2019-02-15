@@ -1,5 +1,5 @@
 import React from 'react'
-import {Navbar, NavItem} from 'react-materialize'
+import {NavItem} from 'react-materialize'
 
 
 const styles = {

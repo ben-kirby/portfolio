@@ -10,12 +10,13 @@ const styles = {
     width: '44px',
     margin: '10px 0px 0px 10px'
   },
+
   navbar: {
     backgroundColor: 'purple'
   }
 }
 
-function Nav(props) {
+function Nav() {
   return (
     <div>
       <Navbar style={styles.navbar} brand={<img style={styles.image} src={icon}/>} right>
