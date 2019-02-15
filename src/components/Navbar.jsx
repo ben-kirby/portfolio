@@ -1,5 +1,5 @@
 import React from 'react'
-import {Navbar, NavItem} from 'react-materialize'
+import {Navbar} from 'react-materialize'
 
 import NavText from './navbarComponents/NavText'
 import icon from '../assets/images/icon.png'
