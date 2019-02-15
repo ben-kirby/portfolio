@@ -1,5 +1,6 @@
 import React from 'react'
 import {NavItem} from 'react-materialize'
+import { Link } from 'react-router-dom';
 
 
 const styles = {
@@ -11,8 +12,13 @@ const styles = {
 function NavText(){
   return (
     <div>
-      <NavItem style={styles.links}>Work</NavItem>
-      <NavItem style={styles.links}>About</NavItem>
+      <NavItem>
+        <Link to="/work">Work</Link>
+      </NavItem>
+
+      <NavItem>
+        <Link to='/about'>About</Link>
+      </NavItem>
     </div>
   )
 }

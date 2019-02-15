@@ -1,7 +1,6 @@
 import React from 'react'
-import { Switch, Route } from 'react-router-dom'
 
-function About(props) {
+function About() {
   return(
     <div>
       <h1>

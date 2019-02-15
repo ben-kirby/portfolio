@@ -2,7 +2,7 @@ import React from 'react'
 import {Navbar} from 'react-materialize'
 
 import NavText from './navbarComponents/NavText'
-import icon from '../assets/images/icon.png'
+import icon from '../assets/images/test-icon.png'
 
 const styles = {
   image: {
