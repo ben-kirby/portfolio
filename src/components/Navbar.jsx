@@ -2,7 +2,7 @@ import React from 'react'
 import {Navbar} from 'react-materialize'
 
 import NavText from './navbarComponents/NavText'
-import icon from '../assets/images/test-icon.png'
+import avi from '../assets/images/profile.jpeg'
 
 const styles = {
   image: {
@@ -13,14 +13,15 @@ const styles = {
     borderRadius: '5rem'
   },
   navbar: {
-    backgroundColor: 'purple'
+    backgroundColor: 'grey',
+    boxShadow: '0px 10px 150px 50px black'
   }
 }
 
 function Nav() {
   return (
     <div>
-      <Navbar style={styles.navbar} brand={<img style={styles.image} src={icon}/>} right>
+      <Navbar style={styles.navbar} brand={<img style={styles.image} src={avi}/>} right>
         <NavText/>
       </Navbar>
     </div>
