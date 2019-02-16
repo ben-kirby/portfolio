@@ -37,7 +37,10 @@ This is a professional portfolio primarly made with React. At this point in time
 ## Features
 
 - Routing to all areas via navbar
-- 
+- Material Icons imported
+- Has a hero image on main that implements parallax on scroll
+- Responsive layout
+- Mobile support
 
 
 ## Known Issues
@@ -47,5 +50,11 @@ This is a professional portfolio primarly made with React. At this point in time
 
 ## Whats Next
 
+- [ ] Finish styling
+- [ ] Add actual content
+- [ ] Deploy site
+  - [ ] Get a domain
+
 # License
+
 _Copyright (c) 2019 Ben Kirby This software is licensed under the MIT license._
