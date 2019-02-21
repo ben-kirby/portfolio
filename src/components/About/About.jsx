@@ -1,5 +1,5 @@
 import React from 'react'
-import icon from '../assets/images/test-icon.png'
+import icon from '../../assets/images/test-icon.png'
 
 const styles = {
   image: {

@@ -1,25 +1,22 @@
 import React from 'react'
-import Main from './Main'
-import Nav from './Navbar'
-import About from './About'
-import FooterBar from './FooterBar.jsx'
+import Main from './Main/Main'
+import Nav from './Nav/Navbar'
+import About from './About/About'
+import FooterBar from './Footer/FooterBar.jsx'
 import { Switch, Route } from 'react-router-dom'
 
 const styles = {
   nav: {
-    zIndex: '10'
+    zIndex: '1900',
   },
   content: {
-    zIndex: '9'
+    zIndex: '100',
   }
 }
 
 function App() {
   return (
     <div>
-      <div style={styles.nav}>
-        <Nav />
-      </div>
       <div style={styles.content}>
         <Switch>
           <Route exact path='/' component={Main} />
