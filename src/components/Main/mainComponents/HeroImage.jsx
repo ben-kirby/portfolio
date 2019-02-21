@@ -1,5 +1,5 @@
 import React from 'react'
-import Hero from '../../../assets/images/hero-temp.jpg'
+import Hero from '../../../assets/images/pdx.jpg'
 import styled from 'styled-components'
 
 const Content = styled.div`
@@ -23,7 +23,7 @@ const styles = {
     alignItems: 'center',
   },
   header: {
-    color: 'white',
+    color: '#EDE1E1',
     textShadow: '0px 0px 150px black',
     fontFamily: 'Over the Rainbow',
     fontSize: '150px',
@@ -31,7 +31,7 @@ const styles = {
     margin: '0px'
   },
   subheader: {
-    color: 'white',
+    color: '#EDE1E1',
     textShadow: '0px 0px 150px black',
     fontFamily: 'Over the Rainbow',
     fontSize: '35px',

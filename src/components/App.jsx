@@ -6,19 +6,12 @@ import Work from './Work/Work'
 import FooterBar from './Footer/FooterBar.jsx'
 import { Switch, Route } from 'react-router-dom'
 
-const styles = {
-  nav: {
-    zIndex: '1900',
-  },
-  content: {
-    zIndex: '100',
-  }
-}
+
 
 function App() {
   return (
     <div>
-      <div style={styles.content}>
+      <div>
         <Switch>
           <Route exact path='/' component={Main} />
           <Route exact path='/about' component={About} />
