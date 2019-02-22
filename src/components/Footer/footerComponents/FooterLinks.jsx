@@ -1,30 +1,27 @@
 import React from 'react'
-import Icon from '@mdi/react'
-import { mdiLinkedinBox, mdiGmail, mdiGithubBox, } from '@mdi/js'
+import { Link } from 'react-router-dom'
+import PropTypes from 'prop-types'
 
-const links = {
-  linkedin: {
-    url: 'https://www.linkedin.com/in/ben-in-pdx/',
-    icon: {mdiLinkedinBox}
-  },
-  github: {
-    url: 'https://github.com/ben-kirby',
-    icon: {mdiGithubBox}
-  },
-  email: {
-    url: 'mailto:benkrby@gmail.com',
-    icon: {mdiGmail}
-  },
-  resume: {
-    url: '',
-    icon: <Icon path='mdiInformationVariant'/>
+import Icon from '@mdi/react'
+import { mdiApple } from '@mdi/js'
+
+const styles = {
+  icon: {
+    height: '64px',
+    fill: 'red'
   }
 }
 
-function FooterLinks(){
+function FooterLinks(props) {
   return (
-    links 
+    <Icon style={StyleSheet.icon} key={props.id} path={mdiApple}/>
   )
+}
+
+FooterLinks.propTypes = {
+  icon: PropTypes.object,
+  url: PropTypes.string,
+  id: PropTypes.string
 }
 
 export default FooterLinks

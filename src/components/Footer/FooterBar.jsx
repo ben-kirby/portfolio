@@ -1,31 +1,38 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
+
 import AppBar from '@material-ui/core/AppBar'
 import Button from '@material-ui/core/Button'
-import { Link } from 'react-router-dom'
-import profile from '../../assets/images/profile.jpeg'
 import Icon from '@mdi/react'
 import { mdiLinkedinBox, mdiGmail, mdiGithubBox, mdiInformationVariant } from '@mdi/js'
-import FooterLinks from './footerComponents/FooterLinks'
 import { v4 } from 'uuid';
 
-const links = {
-  linkedin: {
+import profile from '../../assets/images/profile.jpeg'
+import FooterLinks from './footerComponents/FooterLinks'
+
+const links = [
+  {
     url: 'https://www.linkedin.com/in/ben-in-pdx/',
-    icon: { mdiLinkedinBox }
+    icon: { mdiLinkedinBox },
+    id: v4()
   },
-  github: {
+  {
     url: 'https://github.com/ben-kirby',
-    icon: { mdiGithubBox }
+    icon: { mdiGithubBox },
+    id: v4()
   },
-  email: {
+  {
     url: 'mailto:benkrby@gmail.com',
-    icon: { mdiGmail }
+    icon: { mdiGmail },
+    id: v4()
   },
-  resume: {
+  {
     url: '',
-    icon: { mdiInformationVariant }
+    icon: { mdiInformationVariant },
+    id: v4()
   }
-}
+]
+
 
 
 const styles = {
@@ -59,16 +66,12 @@ function FooterBar() {
           <img style={styles.image} src={profile} />
           <div style={styles.buttons}>
             {links.map((link) =>
-              <FooterLinks
-                icon={link.icon}
-                url={link.url}
-
-
+              <Icon
+                path={link.icon}
+                key={link.id} />
             )}
 
-
-            <Button component={Link} to="/work">Work</Button>
-            <Button component={Link} to="/about">About</Button>
+            <Icon path={mdiGithubBox}/>
           </div>
         </div>
       </AppBar>
