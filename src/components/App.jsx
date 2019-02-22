@@ -1,6 +1,5 @@
 import React from 'react'
 import Main from './Main/Main'
-import Nav from './Nav/Navbar'
 import About from './About/About'
 import Work from './Work/Work'
 import FooterBar from './Footer/FooterBar.jsx'

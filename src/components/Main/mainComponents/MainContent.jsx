@@ -4,13 +4,16 @@ const styles = {
   content: {
     background: '#BADBDB',
     marginTop: '0px'
+  },
+  red: {
+    color: '#BD5252'
   }
 }
 
 function MainContent() {
   return (
     <div style={styles.content}>
-      <h1>Things i do</h1>
+      <h1 style={styles.red}>Things i do</h1>
 
       <p>Do you have any idea how long it takes those cups to decompose. Remind me to thank John for a lovely weekend. What do they got in there? King Kong? Forget the fat lady! You're obsessed with the fat lady! Drive us out of here! What do they got in there? King Kong.</p>
 
