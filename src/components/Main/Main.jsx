@@ -4,10 +4,6 @@ import MainContent from './mainComponents/MainContent'
 import HeroImage from './mainComponents/HeroImage'
 
 const styles = {
-  nav: {
-    position: 'relative',
-    zIndex: '100',
-  },
   hero: {
 
     position: 'relative',
@@ -22,17 +18,8 @@ const styles = {
 function Main() {
   return (
     <div>
-      <div>
-        <div style={styles.nav}>
-          <Nav />
-        </div>
-        <div style={styles.hero}>
-          <HeroImage />
-
-        </div>
-      </div>
-      <div>
-
+      <div style={styles.hero}>
+        <HeroImage />
       </div>
       <MainContent />
     </div>
