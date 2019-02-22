@@ -14,7 +14,7 @@ const Content = styled.div`
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-  `;
+  `
 
 const styles = {
   heroText: {

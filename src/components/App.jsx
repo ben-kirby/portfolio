@@ -21,20 +21,30 @@ const styles = {
   }
 }
 
-function App() {
-  return (
-    <div>
-      <div style={styles.nav}>
-        <Nav />
+class App extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      currentPage: 'main'
+    }
+  }
+
+  render() {
+    return (
+      <div>
+        <div style={styles.nav}>
+          <Nav />
+        </div>
+        <Switch>
+          <Route exact path='/' component={Main} />
+          <Route exact path='/about' component={About} />
+          <Route exact path='/work' component={Work} />
+        </Switch>
+        <FooterBar />
       </div>
-      <Switch>
-        <Route exact path='/' component={Main} />
-        <Route exact path='/about' component={About} />
-        <Route exact path='/work' component={Work} />
-      </Switch>
-      <FooterBar />
-    </div>
-  )
+
+    )
+  }
 }
 
 export default App

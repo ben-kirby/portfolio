@@ -1,12 +1,10 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 
-import AppBar from '@material-ui/core/AppBar'
-import Button from '@material-ui/core/Button'
 import Icon from '@mdi/react'
 import { mdiLinkedinBox, mdiGmail, mdiGithubBox, mdiInformationVariant } from '@mdi/js'
-import { v4 } from 'uuid'
 import styled from 'styled-components'
+
+import profile from '../../assets/images/profile.jpeg'
 
 const Content = styled.div`
     display: flex;
@@ -15,9 +13,7 @@ const Content = styled.div`
     box-shadow: 0 -4px 8px 0 rgba(0, 0, 0, 0.2), 0 -6px 20px 0 rgba(0, 0, 0, 0.19);
     background: rgba(18, 37, 37, 1);
     padding: 10px 10% 10px 10%;
-  `;
-
-import profile from '../../assets/images/profile.jpeg'
+  `
 
 const links = {
   linkedin: 'https://www.linkedin.com/in/ben-in-pdx/',
