@@ -8,12 +8,12 @@ import { v4 } from 'uuid'
 const styles = {
   Content: styled.div`
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   padding: 150px 10% 100px 10%;
   `,
   ButtonRow: styled.div`
+  justify-content: center;
   display: flex;
-
   `,
   WorkButtons: styled.button`
   margin: 5px;
@@ -21,6 +21,9 @@ const styles = {
   border-radius: .25rem;
   `,
   workExample: styled.div`
+  display: flex;
+  justify-content: center;
+
   
   `,
 }
@@ -53,7 +56,7 @@ class Work extends React.Component {
   }
 
   render() {
-    let renderedWork = <WorkContent content={highlightedWork[this.state.active]} />
+    let renderedWorkText = <WorkContent content={highlightedWork[this.state.active]} />
 
     return (
       <styles.Content>
@@ -64,9 +67,9 @@ class Work extends React.Component {
           <styles.WorkButtons value='2' onClick={this.handleChangeContent}>Work 3</styles.WorkButtons>
           <styles.WorkButtons value='3' onClick={this.handleChangeContent}>Work 4</styles.WorkButtons>
         </styles.ButtonRow>
- 
+
         <styles.workExample>
-          {renderedWork}
+          {renderedWorkText}
         </styles.workExample>
 
 
