@@ -6,6 +6,7 @@ import profile from '../../assets/images/profile.jpeg'
 import Icon from '@mdi/react'
 import { mdiLinkedinBox, mdiGmail, mdiGithubBox, mdiInformationVariant } from '@mdi/js'
 import FooterLinks from './footerComponents/FooterLinks'
+import { v4 } from 'uuid';
 
 const links = {
   linkedin: {
@@ -22,7 +23,7 @@ const links = {
   },
   resume: {
     url: '',
-    icon: {mdiInformationVariant}
+    icon: { mdiInformationVariant }
   }
 }
 
@@ -57,8 +58,13 @@ function FooterBar() {
         <div style={styles.navbar}>
           <img style={styles.image} src={profile} />
           <div style={styles.buttons}>
-            <FooterLinks
+            {links.map((link) =>
+              <FooterLinks
+                icon={link.icon}
+                url={link.url}
 
+
+            )}
 
 
             <Button component={Link} to="/work">Work</Button>
