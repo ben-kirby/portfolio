@@ -29,16 +29,22 @@ class Work extends React.Component {
     this.state = {
       active: 0,
     }
+    this.handleChangeContent = this.handleChangeContent.bind(this)
+  }
+
+  handleChangeContent(event){
+    console.log(event.target);
+    
   }
 
   render() {
     return (
       <styles.Content>
         <styles.ButtonRow>
-          <styles.WorkButtons>Work 1</styles.WorkButtons>
-          <styles.WorkButtons>Work 2</styles.WorkButtons>
-          <styles.WorkButtons>Work 3</styles.WorkButtons>
-          <styles.WorkButtons>Work 4</styles.WorkButtons>
+          <styles.WorkButtons value='0' onClick={this.handleChangeContent}>Work 1</styles.WorkButtons>
+          <styles.WorkButtons value='1' onClick={this.handleChangeContent}>Work 2</styles.WorkButtons>
+          <styles.WorkButtons value='2' onClick={this.handleChangeContent}>Work 3</styles.WorkButtons>
+          <styles.WorkButtons value='3' onClick={this.handleChangeContent}>Work 4</styles.WorkButtons>
         </styles.ButtonRow>
       </styles.Content>
     )
