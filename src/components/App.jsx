@@ -12,12 +12,10 @@ const styles = {
     zIndex: '100',
   },
   content: {
-
     position: 'relative',
     marginTop: '-64px',
     padding: '0px 10% 0px 10%',
     zIndex: '1',
-
   }
 }
 
@@ -42,7 +40,6 @@ class App extends React.Component {
         </Switch>
         <FooterBar />
       </div>
-
     )
   }
 }

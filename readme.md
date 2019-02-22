@@ -15,43 +15,40 @@ This is a professional portfolio primarly made with React. At this point in time
 
 ## Component List
 
-- App
 - About
-  - About Image
-  - About text
+- App
 - Footer
-  - Footer Text
 - Hero
-  - Hero Image
-  - Hero Text
+- Main Content
 - Navbar
-  - Nav Text
-- Summary
-  - Summary Text
-    - Summary Images
 - Work
-  - Work Carousel
-    - Work Image
-    - Work Text
+  - Work Content
+  - Work Screenshot
 
 ## Features
 
 - Routing to all areas via navbar
 - Material Icons imported
-- Has a hero image on main that implements parallax on scroll
 - Responsive layout
 - Mobile support
 
 
 ## Known Issues
 
-- No actual content at this time
+- No relavent content at this time
 - Many pages have partial/no styling
 
 ## Whats Next
 
 - [ ] Finish styling
+  - [ ] Refactor to use styled components over inline styling
 - [ ] Add actual content
+  - [ ] Notate what the site was made with
+  - [ ] Get a better hero image
+    - [ ] Update color scheme to match
+  - [ ] Get desktop and mobil screenshots of apps
+  - Write a bio
+- [ ] Refactor reusable components (buttons, icons, etc)
 - [ ] Deploy site
   - [ ] Get a domain
 
