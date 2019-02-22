@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 import WorkContent from './workComponents/WorkContent'
+import WorkScreenshot from './workComponents/WorkScreenshot'
 
 import { v4 } from 'uuid'
 
@@ -71,6 +72,7 @@ class Work extends React.Component {
         <styles.workExample>
           {renderedWorkText}
         </styles.workExample>
+        <WorkScreenshot />
 
 
 
