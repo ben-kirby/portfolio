@@ -47,7 +47,7 @@ This is a professional portfolio primarly made with React. At this point in time
   - [ ] Get a better hero image
     - [ ] Update color scheme to match
   - [ ] Get desktop and mobil screenshots of apps
-  - Write a bio
+  - [ ] Write a bio
 - [ ] Refactor reusable components (buttons, icons, etc)
 - [ ] Deploy site
   - [ ] Get a domain
