@@ -65,16 +65,21 @@ function FooterBar() {
         <div style={styles.navbar}>
           <img style={styles.image} src={profile} />
           <div style={styles.buttons}>
-            {links.map((link) =>
-              <Icon
-                path={link.icon}
-                key={link.id} />
-            )}
-
-            <Icon path={mdiGithubBox}/>
+      <Icon path={mdiGithubBox} />
+            <Icon path={mdiLinkedinBox}/>
           </div>
         </div>
       </AppBar>
+
+
+      {links.map((link) =>
+        <Icon
+          path={link.icon}
+          key={link.id} />
+      )}
+
+
+
     </div>
   )
 }

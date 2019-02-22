@@ -14,14 +14,14 @@ const styles = {
 
 function FooterLinks(props) {
   return (
-    <Icon style={StyleSheet.icon} key={props.id} path={mdiApple}/>
+    <Icon path={mdiApple}/>
   )
 }
 
-FooterLinks.propTypes = {
-  icon: PropTypes.object,
-  url: PropTypes.string,
-  id: PropTypes.string
-}
+// FooterLinks.propTypes = {
+//   path: PropTypes.object,
+//   url: PropTypes.string,
+//   key: PropTypes.string
+// }
 
 export default FooterLinks
