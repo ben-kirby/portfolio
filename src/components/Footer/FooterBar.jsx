@@ -19,33 +19,17 @@ const Content = styled.div`
 
 import profile from '../../assets/images/profile.jpeg'
 
-const links = [
-  {
-    url: 'https://www.linkedin.com/in/ben-in-pdx/',
-    icon: { mdiLinkedinBox },
-    id: v4()
-  },
-  {
-    url: 'https://github.com/ben-kirby',
-    icon: { mdiGithubBox },
-    id: v4()
-  },
-  {
-    url: 'mailto:benkrby@gmail.com',
-    icon: { mdiGmail },
-    id: v4()
-  },
-  {
-    url: '',
-    icon: { mdiInformationVariant },
-    id: v4()
-  }
-]
+const links = {
+  linkedin: 'https://www.linkedin.com/in/ben-in-pdx/',
+  github: 'https://github.com/ben-kirby',
+  mail: 'mailto:benkrby@gmail.com',
+  resume: ''
+}
 
 const styles = {
   image: {
-    height: '70px',
-    width: '70px',
+    height: '100px',
+    width: '100px',
     margin: '10px 0px 10px 10px',
     border: '0px solid black',
     borderRadius: '5rem',
@@ -54,16 +38,9 @@ const styles = {
     height: '64px',
     fill: '#BD5252'
   },
-  navbar: {
+  iconArragement: {
     display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'space-between'
-  },
-  buttons: {
-    marginRight: '10px'
-  },
-  content: {
-    padding: '10px 10% 10px 10%'
+    flexDirection: 'column',
   }
 }
 
@@ -74,12 +51,23 @@ function FooterBar() {
         <img style={styles.image} src={profile} />
 
       </div>
-      <div>
-        <Icon style={styles.icon} path={mdiLinkedinBox} />
-        <Icon style={styles.icon} path={mdiGithubBox} />
-        <Icon style={styles.icon} path={mdiGmail} />
-        <Icon style={styles.icon} path={mdiInformationVariant} />
-
+      <div style={styles.iconArragement}>
+        <div>
+          <a href={links.linkedin}>
+            <Icon style={styles.icon} path={mdiLinkedinBox} />
+          </a>
+          <a href={links.github}>
+            <Icon style={styles.icon} path={mdiGithubBox} />
+          </a>
+        </div>
+        <div>
+          <a href={links.mail}>
+            <Icon style={styles.icon} path={mdiGmail} />
+          </a>
+          <a href={links.resume}>
+            <Icon style={styles.icon} path={mdiInformationVariant} />
+          </a>
+        </div>
       </div>
     </Content>
   )
