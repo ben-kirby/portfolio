@@ -27,6 +27,7 @@ const styles = {
 
   
   `,
+  
 }
 
 const highlightedWork = [
@@ -34,10 +35,33 @@ const highlightedWork = [
     key: v4(),
     title: 'Messenger Hunt',
     gitUrl: 'https://github.com/ben-kirby/messenger_hunt',
+    techUsed: [
+      'mdiLanguageHtml5',
+      'mdiLanguageCss3',
+      'mdiRuby',
+      'mdiLanguageRubyOnRails',
+      'mdiLanguageJavascript',
+    ]
   },
   {
     key: v4(),
-    title: 'whatever',
+    title: 'Quizzle Me Timbers',
+    gitUrl: 'https://github.com/ben-kirby/quizzle-me-timbers',
+    techUsed: [
+      'mdiLanguageHtml5',
+      'mdiLanguageCss3',
+      'mdiLanguageTypescript',
+      'mdiLanguageJavascript',
+      'mdiAngular',
+      'mdiFirebase',
+    ]
+  },
+  {
+
+  }
+  {
+    key: v4(),
+    title: ''
   }
 ]
 
