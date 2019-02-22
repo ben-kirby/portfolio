@@ -5,10 +5,19 @@ import AppBar from '@material-ui/core/AppBar'
 import Button from '@material-ui/core/Button'
 import Icon from '@mdi/react'
 import { mdiLinkedinBox, mdiGmail, mdiGithubBox, mdiInformationVariant } from '@mdi/js'
-import { v4 } from 'uuid';
+import { v4 } from 'uuid'
+import styled from 'styled-components'
+
+const Content = styled.div`
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 -4px 8px 0 rgba(0, 0, 0, 0.2), 0 -6px 20px 0 rgba(0, 0, 0, 0.19);
+    background: rgba(18, 37, 37, 1);
+    padding: 10px 10% 10px 10%;
+  `;
 
 import profile from '../../assets/images/profile.jpeg'
-import FooterLinks from './footerComponents/FooterLinks'
 
 const links = [
   {
@@ -33,19 +42,17 @@ const links = [
   }
 ]
 
-
-
 const styles = {
   image: {
-    height: '44px',
-    width: '44px',
+    height: '70px',
+    width: '70px',
     margin: '10px 0px 10px 10px',
     border: '0px solid black',
     borderRadius: '5rem',
   },
-  linkTag: {
+  icon: {
     height: '64px',
-    fill: 'red'
+    fill: '#BD5252'
   },
   navbar: {
     display: 'flex',
@@ -54,33 +61,27 @@ const styles = {
   },
   buttons: {
     marginRight: '10px'
+  },
+  content: {
+    padding: '10px 10% 10px 10%'
   }
 }
 
 function FooterBar() {
   return (
-    <div>
-      <AppBar position="static" style={{ background: 'rgba(69, 69, 69, 0.25)', boxShadow: 'none' }}>
+    <Content>
+      <div>
+        <img style={styles.image} src={profile} />
 
-        <div style={styles.navbar}>
-          <img style={styles.image} src={profile} />
-          <div style={styles.buttons}>
-      <Icon path={mdiGithubBox} />
-            <Icon path={mdiLinkedinBox}/>
-          </div>
-        </div>
-      </AppBar>
+      </div>
+      <div>
+        <Icon style={styles.icon} path={mdiLinkedinBox} />
+        <Icon style={styles.icon} path={mdiGithubBox} />
+        <Icon style={styles.icon} path={mdiGmail} />
+        <Icon style={styles.icon} path={mdiInformationVariant} />
 
-
-      {links.map((link) =>
-        <Icon
-          path={link.icon}
-          key={link.id} />
-      )}
-
-
-
-    </div>
+      </div>
+    </Content>
   )
 }
 

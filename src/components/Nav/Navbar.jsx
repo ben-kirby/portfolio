@@ -28,7 +28,7 @@ const styles = {
 function Nav() {
   return (
     <div>
-      <AppBar position="static" style={{ background: 'rgba(69, 69, 69, 0.25)', boxShadow: 'none' }}>
+      <AppBar position="fixed" style={{ background: 'rgba(69, 69, 69, 0.25)', boxShadow: 'none' }}>
 
         <div style={styles.navbar}>
           <img style={styles.image} src={profile}/>

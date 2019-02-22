@@ -3,11 +3,20 @@ import React from 'react'
 const styles = {
   content: {
     background: '#BADBDB',
-    marginTop: '0px'
+    marginTop: '0px',
+    paddingLeft: '10%',
+    paddingRight: '10%'
   },
   red: {
-    color: '#BD5252'
-  }
+    color: '#BD5252',
+    margin: '0px',
+    paddingTop: '25px',
+  },
+  noMargin: {
+    marginBottom: '0px',
+    paddingBottom: '25px'
+  },
+
 }
 
 function MainContent() {
@@ -23,7 +32,7 @@ function MainContent() {
 
       <p>Must go faster. Checkmate... Yes, Yes, without the oops! Remind me to thank John for a lovely weekend. Life finds a way. Remind me to thank John for a lovely weekend. I was part of something special. Must go faster. God help us, we're in the hands of engineers.</p>
 
-      <p>They're using our own satellites against us. And the clock is ticking. Must go faster. You really think you can fly that thing? Hey, take a look at the earthlings. Goodbye! Must go faster. Yes, Yes, without the oops! God creates dinosaurs. God destroys dinosaurs. God creates Man. Man destroys God. Man creates Dinosaurs.</p>
+      <p style={styles.noMargin}>They're using our own satellites against us. And the clock is ticking. Must go faster. You really think you can fly that thing? Hey, take a look at the earthlings. Goodbye! Must go faster. Yes, Yes, without the oops! God creates dinosaurs. God destroys dinosaurs. God creates Man. Man destroys God. Man creates Dinosaurs.</p>
     </div>
   )
 }

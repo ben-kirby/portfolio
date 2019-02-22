@@ -14,7 +14,9 @@ const styles = {
 
 function FooterLinks(props) {
   return (
-    <Icon path={mdiApple}/>
+    <div>
+      <Icon path={mdiApple}/>
+    </div>
   )
 }
 

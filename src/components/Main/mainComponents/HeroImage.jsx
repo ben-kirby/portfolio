@@ -50,8 +50,8 @@ function HeroImage() {
     <div>
       <Content>
         <div style={styles.heroText}>
-          <p style={styles.header}>I'm Ben</p>
-          <p style={styles.subheader}>a web developer</p>
+          <p style={styles.header}>Ben Kirby</p>
+          <p style={styles.subheader}>web developer</p>
         </div>
 
       </Content>
