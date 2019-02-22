@@ -1,10 +1,31 @@
 import React from 'react'
-import Footer from 'react-materialize'
 import AppBar from '@material-ui/core/AppBar'
-import Toolbar from '@material-ui/core/Toolbar'
-import Typography from '@material-ui/core/Typography'
 import Button from '@material-ui/core/Button'
 import { Link } from 'react-router-dom'
+import profile from '../../assets/images/profile.jpeg'
+import Icon from '@mdi/react'
+import { mdiLinkedinBox, mdiGmail, mdiGithubBox, mdiInformationVariant } from '@mdi/js'
+import FooterLinks from './footerComponents/FooterLinks'
+
+const links = {
+  linkedin: {
+    url: 'https://www.linkedin.com/in/ben-in-pdx/',
+    icon: { mdiLinkedinBox }
+  },
+  github: {
+    url: 'https://github.com/ben-kirby',
+    icon: { mdiGithubBox }
+  },
+  email: {
+    url: 'mailto:benkrby@gmail.com',
+    icon: { mdiGmail }
+  },
+  resume: {
+    url: '',
+    icon: {mdiInformationVariant}
+  }
+}
+
 
 const styles = {
   image: {
@@ -16,6 +37,7 @@ const styles = {
   },
   linkTag: {
     height: '64px',
+    fill: 'red'
   },
   navbar: {
     display: 'flex',
@@ -27,14 +49,18 @@ const styles = {
   }
 }
 
-function FooterBar (){
-  return(
+function FooterBar() {
+  return (
     <div>
       <AppBar position="static" style={{ background: 'rgba(69, 69, 69, 0.25)', boxShadow: 'none' }}>
 
         <div style={styles.navbar}>
-          {/* <img style={styles.image} src={profile} /> */}
+          <img style={styles.image} src={profile} />
           <div style={styles.buttons}>
+            <FooterLinks
+
+
+
             <Button component={Link} to="/work">Work</Button>
             <Button component={Link} to="/about">About</Button>
           </div>

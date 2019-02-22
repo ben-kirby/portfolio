@@ -28,13 +28,11 @@ function App() {
         <Nav />
       </div>
       <Switch>
-        <div>
-          <Route exact path='/' component={Main} />
-          <Route exact path='/about' component={About} />
-          <Route exact path='/work' component={Work} />
-          <FooterBar />
-        </div>
+        <Route exact path='/' component={Main} />
+        <Route exact path='/about' component={About} />
+        <Route exact path='/work' component={Work} />
       </Switch>
+      <FooterBar />
     </div>
   )
 }

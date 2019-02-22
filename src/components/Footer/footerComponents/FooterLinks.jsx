@@ -1,29 +1,25 @@
 import React from 'react'
 import Icon from '@mdi/react'
-import {mdiLinkedin} from '@mdi/js'
+import { mdiLinkedinBox, mdiGmail, mdiGithubBox, } from '@mdi/js'
 
-const links = [
-  {
-    title: 'LinkedIn',
+const links = {
+  linkedin: {
     url: 'https://www.linkedin.com/in/ben-in-pdx/',
-    icon: <Icon path={mdiLinkedin}/>
+    icon: {mdiLinkedinBox}
   },
-  {
-    title: 'GitHub',
+  github: {
     url: 'https://github.com/ben-kirby',
-    icon: <Icon path='mdiGithubBox'/>
+    icon: {mdiGithubBox}
   },
-  {
-    title: 'Email',
+  email: {
     url: 'mailto:benkrby@gmail.com',
-    icon: <Icon path='gmail'/>
+    icon: {mdiGmail}
   },
-  {
-    title: 'Resume',
+  resume: {
     url: '',
     icon: <Icon path='mdiInformationVariant'/>
   }
-]
+}
 
 function FooterLinks(){
   return (
