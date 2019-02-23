@@ -81,13 +81,11 @@ class Work extends React.Component {
           <styles.WorkButtons value='0' onClick={this.handleChangeContent}>Work 1</styles.WorkButtons>
           <styles.WorkButtons value='1' onClick={this.handleChangeContent}>Work 2</styles.WorkButtons>
           <styles.WorkButtons value='2' onClick={this.handleChangeContent}>Work 3</styles.WorkButtons>
-          <styles.WorkButtons value='3' onClick={this.handleChangeContent}>Work 4</styles.WorkButtons>
         </styles.ButtonRow>
 
         <styles.workExample>
           {renderedWorkText}
         </styles.workExample>
-        <WorkScreenshot />
 
 
 

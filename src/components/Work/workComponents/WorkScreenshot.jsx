@@ -12,14 +12,13 @@ const styles = {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-left:
-
+  margin-top: 25px;
   `,
   mobileImage: styled.img`
   order: 1;
   border-radius: .25rem;
-  height: 30%;
-  width: 30%;
+  height: 20%;
+  width: 20%;
   box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.2), 0px 6px 20px 0 rgba(0, 0, 0, 0.19);
   position: relative;
   z-index: 1;
@@ -27,8 +26,8 @@ const styles = {
   desktopImage: styled.img`
   order: 2;
   border-radius: .25rem;
-  height: 70%;
-  width: 70%;
+  height: 60%;
+  width: 60%;
   box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   position: inherit;
   margin-left: -5%;
