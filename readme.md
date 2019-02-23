@@ -41,12 +41,12 @@ This is a professional portfolio primarly made with React. At this point in time
 ## Whats Next
 
 - [ ] Finish styling
-  - [ ] Refactor to use styled components over inline styling
+  - [x] Refactor to use styled components over inline styling
 - [ ] Add actual content
   - [ ] Notate what the site was made with
   - [ ] Get a better hero image
     - [ ] Update color scheme to match
-  - [ ] Get desktop and mobil screenshots of apps
+  - [ ] Get desktop and mobile screenshots of apps
   - [ ] Write a bio
 - [ ] Refactor reusable components (buttons, icons, etc)
 - [ ] Deploy site
