@@ -32,7 +32,6 @@ const styles = {
   position: inherit;
   margin-left: -5%;
   z-index: 0;
-
   `,
   
 }

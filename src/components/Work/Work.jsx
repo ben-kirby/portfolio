@@ -15,12 +15,15 @@ const styles = {
   ButtonRow: styled.div`
   justify-content: center;
   display: flex;
+  margin-top: -5%;
   `,
   WorkButtons: styled.button`
+  border: 0px solid black;
+  background: white;
   margin: 5px;
-  border: 1px solid black;
-  border-radius: .25rem;
+
   `,
+
   workExample: styled.div`
   display: flex;
   justify-content: center;

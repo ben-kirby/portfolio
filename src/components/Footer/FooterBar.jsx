@@ -15,6 +15,32 @@ const Content = styled.div`
     padding: 10px 10% 10px 10%;
   `
 
+const styles = {
+  content: styled.div`
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 -4px 8px 0 rgba(0, 0, 0, 0.2), 0 -6px 20px 0 rgba(0, 0, 0, 0.19);
+    background: rgba(18, 37, 37, 1);
+    padding: 10px 10% 10px 10%;
+  `,
+  image: styled.img`
+      height: 100px;
+      width: 100px;
+      margin: 10px 0px 10px 10px;
+      border: ;0px solid black;
+      border-radius: 5rem;
+    `,
+  iconArrangement: styled.div`
+    display: flex;
+    flex-direction: column;
+    `,
+  icon: {
+    height: '64px',
+    fill: '#BD5252'
+  },
+}
+
 const links = {
   linkedin: 'https://www.linkedin.com/in/ben-in-pdx/',
   github: 'https://github.com/ben-kirby',
@@ -22,32 +48,15 @@ const links = {
   resume: ''
 }
 
-const styles = {
-  image: {
-    height: '100px',
-    width: '100px',
-    margin: '10px 0px 10px 10px',
-    border: '0px solid black',
-    borderRadius: '5rem',
-  },
-  icon: {
-    height: '64px',
-    fill: '#BD5252'
-  },
-  iconArragement: {
-    display: 'flex',
-    flexDirection: 'column',
-  }
-}
 
 function FooterBar() {
   return (
     <Content>
       <div>
-        <img style={styles.image} src={profile} />
+        <styles.image src={profile}></styles.image>
 
       </div>
-      <div style={styles.iconArragement}>
+      <styles.iconArrangement>
         <div>
           <a href={links.linkedin}>
             <Icon style={styles.icon} path={mdiLinkedinBox} />
@@ -64,7 +73,7 @@ function FooterBar() {
             <Icon style={styles.icon} path={mdiInformationVariant} />
           </a>
         </div>
-      </div>
+      </styles.iconArrangement>
     </Content>
   )
 }

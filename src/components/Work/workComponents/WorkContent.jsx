@@ -10,7 +10,8 @@ const styles = {
   flex-direction: column;
   `,
   projectTitle: styled.h1`
-  margin: auto
+  margin: auto;
+  margin-bottom: 3%;
   `,
 }
 
@@ -21,7 +22,7 @@ function WorkContent(props){
     <styles.content>
       <styles.projectTitle>{props.content.title}</styles.projectTitle>
       <div>
-      <WorkScreenshot/>
+        <WorkScreenshot/>
       </div>
     </styles.content>
   )

@@ -2,7 +2,8 @@ import React from 'react'
 import Hero from '../../../assets/images/pdx.jpg'
 import styled from 'styled-components'
 
-const Content = styled.div`
+const styles = {
+  content: styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
@@ -14,50 +15,36 @@ const Content = styled.div`
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-  `
-
-const styles = {
-  heroText: {
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
-  },
-  header: {
-    color: '#EDE1E1',
-    textShadow: '0px 0px 150px black',
-    fontFamily: 'Over the Rainbow',
-    fontSize: '150px',
-    fontWeight: 'bolder',
-    margin: '0px'
-  },
-  subheader: {
-    color: '#EDE1E1',
-    textShadow: '0px 0px 150px black',
-    fontFamily: 'Over the Rainbow',
-    fontSize: '35px',
-  },
-  hero: {
-    backgroundImage: 'url(${Hero})',
-    width: '100%',
-    maxheight: '600px',
-    overflow: 'hidden',
-    margin: 'auto',
-  },
+  `,
+  heroText: styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  `,
+  header: styled.p`
+    color: #EDE1E1;
+    text-shadow: 0px 0px 150px black;
+    font-family: Over the Rainbow;
+    font-size: 150px;
+    font-weight: bolder;
+    margin: 0px;
+  `,
+  subHeader: styled.p`
+    color: #EDE1E1;
+    text-shadow: 0px 0px 150px black;
+    font-family: Over the Rainbow;
+    font-size: 35px;
+  `,
 }
 
 function HeroImage() {
   return (
-    <div>
-      <Content>
-        <div style={styles.heroText}>
-          <p style={styles.header}>Ben Kirby</p>
-          <p style={styles.subheader}>web developer</p>
-        </div>
-
-      </Content>
-      <div>
-      </div>
-    </div>
+    <styles.content>
+      <styles.heroText>
+        <styles.header>Ben Kirby</styles.header>
+        <styles.subHeader>web developer</styles.subHeader>
+      </styles.heroText>
+    </styles.content>
   )
 }
 

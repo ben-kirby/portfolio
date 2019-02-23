@@ -1,17 +1,18 @@
 import React from 'react'
 import icon from '../../assets/images/test-icon.png'
+import styled from 'styled-components'
 
 const styles = {
-  image: {
-    height: '100px',
-    width: '100px'
-  }
+  image: styled.img`
+    height: 100px;
+    width: 100px;
+  `,
 }
 
 function About() {
   return(
     <div>
-      <img style={styles.image} src={icon}/>
+      <styles.image src src={icon}></styles.image>
       <h3>
         Hi
       </h3>

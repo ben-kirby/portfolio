@@ -1,21 +1,22 @@
 import React from 'react'
 import MainContent from './mainComponents/MainContent'
 import HeroImage from './mainComponents/HeroImage'
+import styled from 'styled-components'
 
 const styles = {
-  hero: {
-    position: 'relative',
-    marginTop: '-64px',
-    zIndex: '1',
-  }
+  hero: styled.div`
+    position: relative;
+    margin-top: -64px;
+    z-index: 1;
+  `,
 }
 
 function Main() {
   return (
     <div>
-      <div style={styles.hero}>
+      <styles.hero>
         <HeroImage />
-      </div>
+      </styles.hero>
       <MainContent />
     </div>
   )
