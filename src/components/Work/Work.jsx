@@ -1,9 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-
 import WorkContent from './workComponents/WorkContent'
-import WorkScreenshot from './workComponents/WorkScreenshot'
-
 import { v4 } from 'uuid'
 
 const styles = {
@@ -21,14 +18,12 @@ const styles = {
   border: 0px solid black;
   background: white;
   margin: 5px;
-
   `,
 
   workExample: styled.div`
   display: flex;
   justify-content: center;
   `,
-
 }
 
 const highlightedWork = [
@@ -70,8 +65,6 @@ class Work extends React.Component {
 
   handleChangeContent(event) {
     this.setState({ active: parseInt(event.target.value) });
-    console.log(highlightedWork[this.state.active].title);
-
   }
 
   render() {
@@ -79,20 +72,14 @@ class Work extends React.Component {
 
     return (
       <styles.Content>
-
         <styles.ButtonRow>
           <styles.WorkButtons value='0' onClick={this.handleChangeContent}>Work 1</styles.WorkButtons>
           <styles.WorkButtons value='1' onClick={this.handleChangeContent}>Work 2</styles.WorkButtons>
           <styles.WorkButtons value='2' onClick={this.handleChangeContent}>Work 3</styles.WorkButtons>
         </styles.ButtonRow>
-
         <styles.workExample>
           {renderedWorkText}
         </styles.workExample>
-
-
-
-
       </styles.Content>
     )
   }

@@ -1,7 +1,5 @@
 import React from 'react'
-
 import WorkScreenshot from './WorkScreenshot'
-
 import styled from 'styled-components'
 
 const styles = {
@@ -14,8 +12,6 @@ const styles = {
   margin-bottom: 3%;
   `,
 }
-
- 
 
 function WorkContent(props){
   return(
