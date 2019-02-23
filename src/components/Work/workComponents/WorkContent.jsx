@@ -1,6 +1,7 @@
 import React from 'react'
 import WorkScreenshot from './WorkScreenshot'
 import styled from 'styled-components'
+import PropTypes from 'prop-types'
 
 const styles = {
   content: styled.div`
@@ -22,6 +23,11 @@ function WorkContent(props){
       </div>
     </styles.content>
   )
+}
+
+WorkContent.propTypes = {
+  content: PropTypes.object,
+  title: PropTypes.string,
 }
 
 export default WorkContent

@@ -1,7 +1,5 @@
 import React from 'react'
 import styled from 'styled-components'
-import Icon from '@mdi/react'
-import { mdiDesktopMac } from '@mdi/js'
 import testDesktop from '../../../assets/images/hero-temp.jpg'
 import testMobile from '../../../assets/images/mobile.jpeg'
 

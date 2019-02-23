@@ -64,7 +64,7 @@ class Work extends React.Component {
   }
 
   handleChangeContent(event) {
-    this.setState({ active: parseInt(event.target.value) });
+    this.setState({ active: parseInt(event.target.value) })
   }
 
   render() {

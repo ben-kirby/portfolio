@@ -3,19 +3,19 @@ import styled from 'styled-components'
 
 const styles = {
   content: styled.div`
-    background: '#BADBDB',
-    marginTop: '0px',
-    paddingLeft: '10%',
-    paddingRight: '10%'
+    background: #BADBDB;
+    margin-top: 0px;
+    padding-left: 10%;
+    padding-right: 10%;
   `,
   red: styled.h1` 
-    color: '#BD5252',
-    margin: '0px',
-    paddingTop: '25px',
+    color: #BD5252;
+    margin: 0px;
+    padding-top: 25px;
   `,
   noMargin: styled.p`
-    marginBottom: '0px',
-    paddingBottom: '25px'
+    margin-bottom: 0px;
+    padding-bottom: 25px;
   `,
 }
 

@@ -12,7 +12,7 @@ const styles = {
 function About() {
   return(
     <div>
-      <styles.image src src={icon}></styles.image>
+      <styles.image src={icon}></styles.image>
       <h3>
         Hi
       </h3>
