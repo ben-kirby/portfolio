@@ -11,6 +11,8 @@ const styles = {
   content: styled.div`
   display: flex;
   align-items: center;
+  justify-content: center;
+  margin-left:
 
   `,
   mobileImage: styled.img`
@@ -18,18 +20,18 @@ const styles = {
   border-radius: .25rem;
   height: 30%;
   width: 30%;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.2), 0px 6px 20px 0 rgba(0, 0, 0, 0.19);
   position: relative;
   z-index: 1;
-  margin-left: 10%;
   `,
   desktopImage: styled.img`
   order: 2;
   border-radius: .25rem;
   height: 70%;
   width: 70%;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  position: relative;
+  box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  position: inherit;
+  margin-left: -5%;
   z-index: 0;
 
   `,

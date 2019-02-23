@@ -24,8 +24,6 @@ const styles = {
   workExample: styled.div`
   display: flex;
   justify-content: center;
-
-  
   `,
 
 }
