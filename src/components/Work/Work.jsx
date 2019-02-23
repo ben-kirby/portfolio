@@ -27,7 +27,7 @@ const styles = {
 
   
   `,
-  
+
 }
 
 const highlightedWork = [
@@ -56,13 +56,6 @@ const highlightedWork = [
       'mdiFirebase',
     ]
   },
-  {
-
-  }
-  {
-    key: v4(),
-    title: ''
-  }
 ]
 
 class Work extends React.Component {
