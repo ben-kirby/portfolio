@@ -37,6 +37,7 @@ This is a professional portfolio primarly made with React. At this point in time
 
 - No relavent content at this time
 - Many pages have partial/no styling
+- Clicking "Work 3" in /work multipple times breaks the page. This is because there is nothing coded for work 3 yet. Should be resolved when I add content.
 
 ## Whats Next
 
