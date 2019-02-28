@@ -2,6 +2,18 @@ import React from 'react'
 import styled from 'styled-components'
 import WorkContent from './workComponents/WorkContent'
 import { v4 } from 'uuid'
+import {
+  mdiLanguageCss3,
+  mdiLanguageHtml5,
+  mdiLanguageJavascript,
+  mdiRuby,
+  mdiLanguageRubyOnRails,
+  mdiAngular,
+  mdiFirebase,
+  mdiLanguageTypescript
+} from '@mdi/js'
+
+
 
 const styles = {
   Content: styled.div`
@@ -32,11 +44,11 @@ const highlightedWork = [
     title: 'Messenger Hunt',
     gitUrl: 'https://github.com/ben-kirby/messenger_hunt',
     techUsed: [
-      'mdiLanguageHtml5',
-      'mdiLanguageCss3',
-      'mdiRuby',
-      'mdiLanguageRubyOnRails',
-      'mdiLanguageJavascript',
+      {mdiLanguageCss3},
+      {mdiLanguageHtml5},
+      {mdiLanguageJavascript},
+      {mdiRuby},
+      {mdiLanguageRubyOnRails},
     ]
   },
   {
@@ -44,14 +56,27 @@ const highlightedWork = [
     title: 'Quizzle Me Timbers',
     gitUrl: 'https://github.com/ben-kirby/quizzle-me-timbers',
     techUsed: [
-      'mdiLanguageHtml5',
-      'mdiLanguageCss3',
-      'mdiLanguageTypescript',
-      'mdiLanguageJavascript',
-      'mdiAngular',
-      'mdiFirebase',
+      { mdiAngular},
+      {mdiLanguageCss3},
+      { mdiFirebase},
+      {mdiLanguageHtml5},
+      {mdiLanguageJavascript},
+      { mdiLanguageTypescript},
     ]
   },
+  {
+    key: v4(),
+    title: 'Lift',
+    gitUrl: 'https://github.com/ben-kirby/Lift',
+    techUsed: [
+      { mdiAngular},
+      {mdiLanguageCss3},
+      { mdiFirebase},
+      {mdiLanguageHtml5},
+      {mdiLanguageJavascript},
+      { mdiLanguageTypescript},
+    ]
+  }
 ]
 
 class Work extends React.Component {
@@ -77,9 +102,7 @@ class Work extends React.Component {
           <styles.WorkButtons value='1' onClick={this.handleChangeContent}>Work 2</styles.WorkButtons>
           <styles.WorkButtons value='2' onClick={this.handleChangeContent}>Work 3</styles.WorkButtons>
         </styles.ButtonRow>
-        <styles.workExample>
-          {renderedWorkText}
-        </styles.workExample>
+        {renderedWorkText}
       </styles.Content>
     )
   }
