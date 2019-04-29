@@ -1,64 +1,61 @@
-import React from 'react'
-import WorkScreenshot from './WorkScreenshot'
-import styled from 'styled-components'
-import PropTypes from 'prop-types'
-import Icon from '@mdi/react'
-import ReusableIcon from '../../Reusable/ReusableIcon'
+import React from 'react';
+import WorkScreenshot from './WorkScreenshot';
+import styled from 'styled-components';
+import PropTypes from 'prop-types';
+import Icon from '@mdi/react';
+import ReusableIcon from '../../Reusable/ReusableIcon';
+import { v4 } from 'uuid';
 
 const styles = {
-  content: styled.div`
+	content: styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
     `,
-  projectLink: {
-    margin: 'auto',
-    marginBottom: '3%',
-  },
-  projectTitle: {
-    color: 'black',
-  },
-  techUsed: styled.div`
+	projectLink: {
+		margin: 'auto',
+		marginBottom: '3%',
+	},
+	projectTitle: {
+		color: '#529fca',
+	},
+	techUsed: styled.div`
     display: flex;
-
+    justify-content: space-evenly;
+    width: auto;
   `,
-}
+};
 
 class WorkContent extends React.Component {
-  constructor(props){
-    super(props);
-  }
+	constructor(props){
+		super(props);
+	}
 
-  showProps(props){
-    console.log(this.props.content);
-  }
-
-  render() {
-    this.showProps();
-
-    return (
-      <styles.content>
-        <a href={this.props.content.gitUrl}>
-          <h1 style={styles.projectTitle}>{this.props.content.title}</h1></a>
-        <div>
-          <WorkScreenshot />
-        </div>
-        <styles.techUsed>
-          <p><em>technology used</em></p>
-          {this.props.content.map((iconInfo) =>
-            <ReusableIcon
-              path={iconInfo.techUsed}
-              key={iconInfo.key} />
-          )}
-        </styles.techUsed>
-      </styles.content>
-    )
-  }
+	render() {
+		return (
+			<styles.content>
+				<a href={this.props.content.gitUrl}>
+					<h1 style={styles.projectTitle}><em>{this.props.content.title}</em></h1></a>
+				<div>
+					<WorkScreenshot />
+				</div>
+				<p><em>technology used</em></p>
+				<styles.techUsed>
+					{this.props.content.techUsed.map((icon) =>
+						<ReusableIcon
+							img={icon}
+							key={v4()}
+						/>
+					)}
+				</styles.techUsed>
+			</styles.content>
+		);
+	}
 }
 
 WorkContent.propTypes = {
-  content: PropTypes.object,
-  title: PropTypes.string,
-}
+	content: PropTypes.object,
+	title: PropTypes.string,
+};
 
-export default WorkContent
+export default WorkContent;
